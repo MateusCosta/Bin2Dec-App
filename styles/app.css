@@ -1,0 +1,89 @@
+@import "reset.css";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(255, 222, 23);
+  background: linear-gradient(
+    209deg,
+    rgba(255, 222, 23, 1) 0%,
+    rgba(237, 0, 141, 1) 100%
+  );
+}
+
+.calculator-wrapper {
+  width: 70vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: #35485c;
+  display: flex;
+  align-items: center;
+  box-shadow: inset -10px -10px 0px 0px #133247;
+  flex-direction: column;
+}
+
+.border-top {
+  width: 60vw;
+  height: 3vw;
+  background-color: #445970;
+  border-radius: 0 0 10px 10px;
+}
+
+.screen {
+  width: 60vw;
+  height: 20vh;
+  border-radius: 10px;
+  background: #8ac663;
+  margin-top: 20px;
+  box-shadow: inset 0px 10px 0px 0px #3cb54a;
+  color: #0f9347;
+  text-align: right;
+  font-size: 105px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+span.power {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.buttons {
+  width: 25vh;
+  height: 25vh;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.button {
+  background: #566c7d;
+  box-shadow: inset -10px -10px 0px 0px #40546b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+}
+
+.button.red {
+  background: #dd333e;
+  box-shadow: inset -10px -10px 0px 0px #c61b31;
+}
+
+.button.grey {
+  background: #b0c3d9;
+  box-shadow: inset -10px -10px 0px 0px #98b5cd;
+}
